@@ -51,8 +51,8 @@ public class Graph {
 	}
 
 	public void addEdge(int v, int w) {
-		this.adjList.get(Integer.valueOf(v)).add(Integer.valueOf(w));
-		this.adjList.get(Integer.valueOf(w)).add(Integer.valueOf(v));
+		this.adjList.get(Integer.valueOf(v)).add(w);
+		this.adjList.get(Integer.valueOf(w)).add(v);
 	}
 
 	public Iterable<Integer> adj(int v) {
